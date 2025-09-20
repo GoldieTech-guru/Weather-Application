@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="hero">
+  <video id="bgVideo" autoplay muted loop playsinline class="hidden">
+    <source id="bgVideoSource" type="video/mp4">
+  </video>
+  <img id="bgImg" class="hidden" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1350&q=80" alt="Background">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Automated Weather Notifier</h1>
+    <p>Select location from dropdowns or click the map • Get real-time updates • SMS/Email alerts</p>
+  </div>
+</div>
+
+<section>
+  <div class="row">
+    <select id="countrySelect">
+      <option value="">Select Country</option>
+    </select>
+    <select id="stateSelect" disabled>
+      <option value="">Select State</option>
+    </select>
+    <select id="citySelect" disabled>
+      <option value="">Select City</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <p id="selectedLocation" class="msg">Selected Location: -</p>
+  </div>
+
+  <div class="row">
+    <button id="useMyLocation">Use My Location</button>
+    <button id="getWeather">Get Weather</button>
+  </div>
+
+  <div id="weatherBox" class="card hidden"></div>
+</section>
+
+<section>
+  <h2>Map (click to choose custom location)</h2>
+  <div id="map"></div>
+  <p class="msg">Tip: Click a point for custom location, or use dropdowns for cities.</p>
+</section>
+
+<section>
+  <h2>Subscribe for Alerts</h2>
+  <form id="subscribeForm">
+    <div class="row">
+      <input id="phone" placeholder="Phone (international)">
+    </div>
+    <div class="row">
+      <input id="email" placeholder="Email" required>
+    </div>
+    <div class="row">
+      <select id="method">
+        <option value="email">Email Only</option>
+        <option value="sms">SMS Only</option>
+        <option value="both">Both</option>
+      </select>
+    </div>
+    <div class="row">
+      <label>
+        <input type="checkbox" id="alsoEmail"> Receive email alerts as well (if phone provided)
+      </label>
+    </div>
+    <button type="submit">Subscribe</button>
+    <p id="subscribeMsg" class="msg"></p>
+  </form>
+</section>
+
+<section>
+  <h2>Weather Types</h2>
+  <div class="grid">
+    <div class="tile">
+      <div class="tile-media">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1350&q=80" alt="Clear">
+      </div>
+      <div class="tile-body">
+        <h3>Clear</h3>
+        <button class="tip-btn" data-kind="Clear" data-type="about">About & Dress Tips</button>
+      </div>
+    </div>
+    <div class="tile">
+      <div class="tile-media">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1350&q=80" alt="Clouds">
+      </div>
+      <div class="tile-body">
+        <h3>Clouds</h3>
+        <button class="tip-btn" data-kind="Clouds" data-type="about">About & Dress Tips</button>
+      </div>
+    </div>
+    <div class="tile">
+      <div class="tile-media">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80" alt="Rain">
+      </div>
+      <div class="tile-body">
+        <h3>Rain</h3>
+        <button class="tip-btn" data-kind="Rain" data-type="about">About & Dress Tips</button>
+      </div>
+    </div>
+    <div class="tile">
+      <div class="tile-media">
+        <img src="https://images.unsplash.com/photo-1533957293890-129e4a3e1f7e?auto=format&fit=crop&w=1350&q=80" alt="Thunderstorm">
+      </div>
+      <div class="tile-body">
+        <h3>Thunderstorm</h3>
+        <button class="tip-btn" data-kind="Thunderstorm" data-type="safety">Safety Tips</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="modalClose" class="close">×</span>
+    <h2 id="modalTitle"></h2>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+{% endblock %}

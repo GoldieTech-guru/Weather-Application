@@ -1,0 +1,110 @@
+[
+  {
+    "method": "sms",
+    "phone": "+2349016931701",
+    "email": "butvalentine@gmail.com",
+    "also_email": true,
+    "alt_email": "butvalentine@gmail.com",
+    "city": "Municipal Area Council",
+    "country": "Nigeria",
+    "lat": 9.0620454,
+    "lon": 7.4665551,
+    "ts": "2025-08-19T04:36:44.971481+00:00Z"
+  },
+  {
+    "method": "sms",
+    "phone": "+2349016931701",
+    "email": "butvalentine@gmail.com",
+    "also_email": true,
+    "alt_email": "butvalentine@gmail.com",
+    "city": "Abuja",
+    "country": "Nigeria",
+    "lat": 9.0643305,
+    "lon": 7.4892974,
+    "ts": "2025-08-19T04:48:14.244710+00:00Z"
+  },
+  {
+    "method": "email",
+    "phone": null,
+    "email": "butvalentine@gmail.com",
+    "also_email": false,
+    "alt_email": null,
+    "city": "Lagos Mainland",
+    "country": "Nigeria",
+    "lat": 6.4932779,
+    "lon": 3.3883546,
+    "ts": "2025-08-19T04:57:48.000892+00:00Z"
+  },
+  {
+    "method": "sms",
+    "phone": "+2349016931701",
+    "email": "butvalentine@gmail.com",
+    "also_email": true,
+    "alt_email": "butvalentine@gmail.com",
+    "city": "Lagos Mainland",
+    "country": "Nigeria",
+    "lat": 6.4932779,
+    "lon": 3.3883546,
+    "ts": "2025-08-19T07:58:09.147218+00:00Z"
+  },
+  {
+    "method": "sms",
+    "phone": "+2349016931701",
+    "email": "butvalentine@gmail.com",
+    "also_email": true,
+    "alt_email": "butvalentine@gmail.com",
+    "city": "Lagos Mainland",
+    "country": "Nigeria",
+    "lat": 6.4932779,
+    "lon": 3.3883546,
+    "ts": "2025-08-19T08:21:38.719812+00:00Z"
+  },
+  {
+    "method": "sms",
+    "phone": "+2349016931701",
+    "email": "vincentaneke7@gmail.com",
+    "also_email": true,
+    "alt_email": "vincentaneke7@gmail.com",
+    "city": "Poindimi\u00e9",
+    "country": "New Caledonia",
+    "lat": -20.9369364,
+    "lon": 165.3342587,
+    "ts": "2025-08-19T08:34:50.936502+00:00Z"
+  },
+  {
+    "method": "sms",
+    "phone": "+2349016931701",
+    "email": "butvalentine@yahoo.com",
+    "also_email": true,
+    "alt_email": "butvalentine@yahoo.com",
+    "city": "Naogaon ",
+    "country": "Bangladesh",
+    "lat": 24.8073229,
+    "lon": 88.9445447,
+    "ts": "2025-08-19T08:49:15.533580+00:00Z"
+  },
+  {
+    "method": "sms",
+    "phone": "+2349016931701",
+    "email": "butvalentine@yahoo.com",
+    "also_email": true,
+    "alt_email": "butvalentine@yahoo.com",
+    "city": "Naogaon ",
+    "country": "Bangladesh",
+    "lat": 24.8073229,
+    "lon": 88.9445447,
+    "ts": "2025-08-19T08:49:18.327223+00:00Z"
+  },
+  {
+    "method": "email",
+    "phone": "+2349016931701",
+    "email": "butvalentine@gmail.com",
+    "also_email": false,
+    "alt_email": null,
+    "city": "Barisal ",
+    "country": "Bangladesh",
+    "lat": 22.7047521,
+    "lon": 90.370729,
+    "ts": "2025-08-19T10:28:34.053751+00:00Z"
+  }
+]
